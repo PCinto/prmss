@@ -1,0 +1,36 @@
+<?php
+session_start();
+
+// Ensure only admins can update settings
+if (!isset($_SESSION['userrole']) || strtolower($_SESSION['userrole']) !== 'admin') {
+    header("Location: login.php");
+    exit();
+}
+
+include 'connect.php';
+
+// Check that the form was submitted via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve and validate the email notifications setting from the form
+    $email_notifications = isset($_POST['email_notifications']) ? $_POST['email_notifications'] : '';
+    if ($email_notifications !== "enabled" && $email_notifications !== "disabled") {
+        // Invalid value; redirect with error message
+        header("Location: settings.php?msg=Invalid+setting+value");
+        exit();
+    }
+
+    // Update the setting in the database.
+    // Assuming your settings table has a column named "value" and a row identified by "name" = 'email_notifications'
+    $query = "UPDATE settings SET value = '$email_notifications' WHERE name = 'email_notifications'";
+    if (mysqli_query($conn, $query)) {
+        header("Location: settings.php?msg=Settings+updated+successfully");
+        exit();
+    } else {
+        header("Location: settings.php?msg=Error+updating+settings");
+        exit();
+    }
+} else {
+    header("Location: settings.php");
+    exit();
+}
+?>

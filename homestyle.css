@@ -1,0 +1,80 @@
+  :root {
+            --primary-color: #28a745;
+            --secondary-color: #343a40;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --header-text-color: #fff;
+            --input-border-color: #ccc;
+            --border-radius: 5px;
+            --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .header {
+            background-color: var(--secondary-color);
+            color: var(--header-text-color);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header a {
+            color: var(--header-text-color);
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            width: 300px;
+            margin: 50px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid var(--input-border-color);
+            border-radius: var(--border-radius);
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+        }
+
+        

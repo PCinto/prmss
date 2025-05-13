@@ -1,0 +1,161 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #918190, #adc4d9);
+    color: #333;
+  }
+  
+  /* Main Header (Professional Fixed Header) */
+  .main-header {
+    width: 100%;
+   /* background: linear-gradient(135deg, #7d3e79, #38536d); */
+   background: linear-gradient(135deg, #121212, #38536d);
+    color: #fff;
+    padding: 20px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 60px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  .user-info {
+    font-size: 16px;
+  }
+  .user-info .logout {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .user-info .logout:hover {
+    background: #fff;
+    color: #343a40;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    margin-top: 100px; /* Space for fixed header */
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  
+  /* Dashboard/Attendance Sections */
+  .dashboard-section,
+  .interactive-section,
+  .quick-links-section,
+  .activities-section {
+    background: linear-gradient(135deg, #836481, #8496a7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .dashboard-section h2 {
+    font-size: 28px;
+    margin-bottom: 55px;
+  }
+  .interactive-section .greeting,
+  .interactive-section .clock {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+  
+  /* Quick Links */
+  .quick-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  .quick-links li a {
+    text-decoration: none;
+    color: #bccdc1;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .quick-links li a:hover {
+    background: #dfdddf;
+  }
+  
+  /* Attendance Specific Styles */
+  .dashboard-section p {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .dashboard-section form {
+    margin-top: 20px;
+  }
+  
+  /* Check In Button */
+  .dashboard-section button.checkin-btn {
+    background: linear-gradient(135deg, #25c117, #38536d);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Check Out Button */
+  .dashboard-section button.checkout-btn {
+    background: linear-gradient(135deg, #c11717, #38536d);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .dashboard-section button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .user-info {
+      margin-top: 10px;
+    }
+    .quick-links {
+      flex-direction: column;
+    }
+    .quick-links li {
+      margin-bottom: 10px;
+    }
+  }
+  
