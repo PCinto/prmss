@@ -34,3 +34,58 @@ CREATE TABLE IF NOT EXISTS id_cards (
 ) ENGINE=InnoDB
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci;
+
+
+
+
+
+
+
+
+
+
+
+
+Meeting:
+
+Official Logo Design
+
+ID should be Portrait 
+Name, DOB, State, County, Payam, Boma, Headchief - officer, Sub-chief, Gender, Age, Marital Status, Specialization (IT, Driver, Technician), Arcade Attendance (Training Yes or No),
+Previous Unit, place of assignment, Date of Reporting, Educational BG, Transfer, Attached to (Airport, Custom, CID, Ministry, Institutions)
+Pin/Registration Number(Serial Number)
+Blood Group (On the Back of ID,) QR Code (on Front Side), Date of Issue, Expiry Date (Back of ID), Photo (Centre of ID)
+
+Arrest,  > Police 
+
+
+
+
+CASES
+
+Incitent > Investigation Room (Investigator) > Record Details/Documents || Complainer / Summon (By Director) || Violated Policy > Other Proceedure > Tranfer to Legal Affairs 
+
+Adminst, Finance, Investigation Dep, Officers Affairs, NCOs (Non-Commissioned Officers), Information Department, External Department, Director & Deputy, ICT, Logistics & Procurement
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

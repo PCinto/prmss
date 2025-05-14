@@ -279,7 +279,7 @@ if (isset($_GET['edit'])) {
   </style>
 </head>
 <body>
-  <?php include 'header.php'; ?>
+  <?php include 'manageuserH.php'; ?>
 
   <div class="main-content">
     <h2>Manage Users</h2>

@@ -8,9 +8,10 @@
     </div>
     <nav class="main-nav" role="navigation" aria-label="Main Navigation">
         <ul>
-            <li><a href="#">Home</a></li>            
+            <li><a href="home.php">Home</a></li>
+            <li><a href="view_approved_cases.php">Approved Cases</a></li>             
             <li><a href="about.php">About Us</a></li>
-            <li><a href="contact.php">Contact Us</a></li>
+            <li><a href="#">Contact Us</a></li>
             
         </ul>
     </nav>
